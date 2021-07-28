@@ -1,3 +1,0 @@
-se fue modificando según el tamaño de tesela
-
--Entre otras cosas se modifica el batch (mayor cuanto menor tamaño de tesela)
