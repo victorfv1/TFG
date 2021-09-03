@@ -63,4 +63,4 @@ history = model.fit_generator(train_generator, steps_per_epoch= train_steps_per_
 
 #-----------#
 #model.save("Models1/vgg16_noweights-1.h5")
-model.save("Models1/vgg16_noweights-1.h5")
+model.save("Models1/vgg16_noweights-3.h5")
