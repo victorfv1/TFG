@@ -195,13 +195,13 @@ callbacks = [mode_autosave, lr_reducer, tensorboard, early_stopping]
 
 
 
-from segmentation_models import Linknet
+from segmentation_models import Unet
 from keras.optimizers import Adam
 import segmentation_models as sm
 from segmentation_models.losses import bce_jaccard_loss, bce_dice_loss
 
 
-model = Linknet(backbone_name = 'inceptionresnetv2', encoder_weights='imagenet', encoder_freeze = False)
+model = Unet(backbone_name = 'inceptionresnetv2', encoder_weights='imagenet', encoder_freeze = False)
 model.compile(optimizer = Adam(),loss=bce_jaccard_loss, metrics=[sm.metrics.IOUScore(), sm.metrics.FScore()])
 
 model.summary()
